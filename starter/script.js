@@ -88,12 +88,47 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+// Task 1.
+
 // Function to prompt user for password options
+
 function getPasswordOptions() {
+
+  var length = parseInt(prompt("How many characters would you like your password to contain? (Must be between 8 and 128.)"));
+  
+  if (isNaN (length) || length < 8 || length > 128) {
+    alert("Your password length must be a number between 8 and 128 characters. Please try again.");
+    // return null; Null option- terminates the function
+    
+    return getPasswordOptions(); // Recursive call option for a more user-friendly experience
+  }
+
+  var hasSpecialCharacters = confirm("To confirm entering special characters, click OK.");
+  var hasNumericCharacters = confirm("To confirm entering numeric characters, click OK.");
+  var hasLowerCasedCharacters = confirm("To confirm entering lowercase characters, click OK.");
+  var hasUpperCasedCharacters = confirm("To confirm entering uppercase characters, click OK.");
+  
+  if (!hasSpecialCharacters && !hasNumericCharacters && !hasLowerCasedCharacters && !hasUpperCasedCharacters) {
+    alert("You must select at least one character type. Please try again.");
+    // return null; Null option- terminates the function
+    
+    return getPasswordOptions(); // Recursive call option for a more user-friendly experience
+  }
+
+  return {
+    length: length,
+    hasSpecialCharacters: hasSpecialCharacters,
+    hasNumericCharacters: hasNumericCharacters,
+    hasLowerCasedCharacters: hasLowerCasedCharacters,
+    hasUpperCasedCharacters: hasUpperCasedCharacters
+  };
 
 }
 
+// Task 2.
+
 // Function for getting a random element from an array
+
 function getRandom(arr) {
 
 }
