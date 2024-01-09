@@ -33,9 +33,9 @@ This project is deployed and accessible for use. It demonstrates a practical app
 
 [Link to the deployed Password Generator application]()
 
-Screenshot of the Initial Password Generator application ![Screenshot of the Initial Password Generator application](./starter/starter-password-generator-screenshot-safari.png)
+Screenshot of the Initial Password Generator application ![Screenshot of the Initial Password Generator application](./starter-password-generator-screenshot-safari.png)
 
-Screenshot of the Modified Password Generator application ![Screenshot of the Modified Password Generator application](./starter/modified-password-generator-screenshot-safari.png)
+Screenshot of the Modified Password Generator application ![Screenshot of the Modified Password Generator application](./modified-password-generator-screenshot-safari.png)
 
 ### GitHub Repository
 
