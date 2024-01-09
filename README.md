@@ -31,7 +31,7 @@ Users interact with a simple interface to choose their password criteria. Once s
 
 This project is deployed and accessible for use. It demonstrates a practical application of JavaScript in creating functional and interactive web utilities.
 
-[Link to the deployed Password Generator application]()
+[Link to the deployed Password Generator application](https://natt5.github.io/challenge5-password-generator-js/)
 
 Screenshot of the Initial Password Generator application ![Screenshot of the Initial Password Generator application](./starter-password-generator-screenshot-safari.png)
 
